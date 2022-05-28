@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace RFPDAY_24_Lambda_User_Registration
 {
-    public class FirstName
+    public class LastName
     {
-        public void MFirstName (string Name)
+        public void MLastName(string name)
         {
-           string RegexValid = "^[A-Z][A-z a-z 0-9 $#@!^&*?]{2,}$";
-           if (Regex.IsMatch(RegexValid, Name))
-           {
+            string regex_LastName = "^[A-Z][A-Z a-z 0-9 !@#$%&*?]{2,}$";
+            if(Regex.IsMatch(regex_LastName,name))
+            {
                 Console.WriteLine("Valid");
-           }
-           else
-           {
+            }
+            else
+            {
                 Console.WriteLine("Invalid");
-           } 
+            }
         }
     }
 }
