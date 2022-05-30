@@ -11,14 +11,14 @@ namespace RFPDAY_24_Lambda_User_Registration
     {
         public void MLastName(string name)
         {
-            string regex_LastName = "^[A-Z][A-Z a-z 0-9 !@#$%&*?]{2,}$";
+            string regex_LastName = "^[A-Z][a-z A-Z 0-9 !@#$%^&*?]{2,}$";
             if(Regex.IsMatch(regex_LastName,name))
             {
-                Console.WriteLine("Valid");
+                Console.WriteLine("Lastname is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("Lastname is Invalid");
             }
         }
     }

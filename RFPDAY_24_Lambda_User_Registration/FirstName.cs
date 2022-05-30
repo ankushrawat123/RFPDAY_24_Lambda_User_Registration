@@ -14,11 +14,11 @@ namespace RFPDAY_24_Lambda_User_Registration
            string RegexValid = "^[A-Z][A-z a-z 0-9 $#@!^&*?]{2,}$";
            if (Regex.IsMatch(RegexValid, Name))
            {
-                Console.WriteLine("Valid");
+                Console.WriteLine("FirstName is Valid");
            }
            else
            {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("FirstName is Invalid");
            } 
         }
     }
