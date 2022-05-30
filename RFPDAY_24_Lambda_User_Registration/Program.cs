@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RFPDAY_24_Lambda_User_Registration;
 Console.WriteLine("Welcome to Lambda Registration Program");
-Console.WriteLine("Enter \n1 FOR FIRSTNAME REGEX \n2 FOR LASTNAME REGEX \n3 FOR EMAIL REGEX \n");
+Console.WriteLine("Enter \n1 FOR FIRSTNAME REGEX \n2 FOR LASTNAME REGEX \n3 FOR EMAIL REGEX \n4 FOR MOBILE NUMBER REGEX");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
 {
@@ -20,5 +20,8 @@ switch (num)
         obj3.MEmail("abc.xyz@bl.co.in");
         break;
 
-    
+    case 4:
+        MobileNum obj4 = new MobileNum();
+        obj4.MMoblie("91 9812345605");
+        break;
 }
